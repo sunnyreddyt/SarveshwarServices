@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sarveshwar Services</string>
+    <string name="nolocation">no location</string>
+    <string name="service_not_available">service not available</string>
+    <string name="invalid_lat_long_used">invalid latitude and longitude</string>
+    <string name="no_address_found">no address found</string>
+    <string name="no_internet_connection">No internet Connection</string>
+</resources>
