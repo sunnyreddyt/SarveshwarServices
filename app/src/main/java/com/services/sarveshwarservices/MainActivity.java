@@ -9,12 +9,14 @@ import android.widget.TextView;
 
 import com.services.sarveshwarservices.mvp.MVPActivity;
 
+import org.w3c.dom.Text;
+
 /**
  * Created by Sarveshwar Reddy on 12/03/2018.
  */
 public class MainActivity extends AppCompatActivity {
 
-    TextView asyncTaskTextView, retrofitTextView, volleyTextView, googleMapsTextView, mvpTextView, serviceTextView;
+    TextView asyncTaskTextView, retrofitTextView, volleyTextView, googleMapsTextView, mvpTextView, serviceTextView, intentServiceTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +29,18 @@ public class MainActivity extends AppCompatActivity {
         googleMapsTextView = (TextView) findViewById(R.id.googleMapsTextView);
         mvpTextView = (TextView) findViewById(R.id.mvpTextView);
         serviceTextView = (TextView) findViewById(R.id.serviceTextView);
+        intentServiceTextView = (TextView) findViewById(R.id.intentServiceTextView);
 
+
+        intentServiceTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, IntentServiceActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
         serviceTextView.setOnClickListener(new View.OnClickListener() {
             @Override

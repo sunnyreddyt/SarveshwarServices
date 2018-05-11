@@ -19,6 +19,7 @@
                 android:layout_width="@dimen/_33sdp"
                 android:layout_height="@dimen/_33sdp"
                 android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_4sdp"
                 android:padding="@dimen/_5sdp"
                 android:src="@drawable/arrow_left"
                 android:tint="@color/white" />
@@ -27,10 +28,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_marginRight="@dimen/_30sdp"
                 android:fontFamily="@font/quicksand_medium"
                 android:text="Registration"
+                android:layout_centerInParent="true"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_14sdp" />
 

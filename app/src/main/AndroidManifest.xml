@@ -7,6 +7,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <permission
         android:name="dynamic.android.locations.permission.MAPS_RECEIVE"
@@ -61,7 +63,13 @@
             android:name=".ServiceActivity"
             android:parentActivityName=".MainActivity"></activity>
 
+        <activity
+            android:name=".IntentServiceActivity"
+            android:parentActivityName=".MainActivity"></activity>
+
         <service android:name=".service.BackgroundService"></service>
+
+        <service android:name=".service.ImageDownloadIntentService"></service>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
