@@ -14,7 +14,7 @@ import com.services.sarveshwarservices.mvp.MVPActivity;
  */
 public class MainActivity extends AppCompatActivity {
 
-    TextView asyncTaskTextView, retrofitTextView, volleyTextView, googleMapsTextView, mvpTextView;
+    TextView asyncTaskTextView, retrofitTextView, volleyTextView, googleMapsTextView, mvpTextView, serviceTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,18 @@ public class MainActivity extends AppCompatActivity {
         volleyTextView = (TextView) findViewById(R.id.volleyTextView);
         googleMapsTextView = (TextView) findViewById(R.id.googleMapsTextView);
         mvpTextView = (TextView) findViewById(R.id.mvpTextView);
+        serviceTextView = (TextView) findViewById(R.id.serviceTextView);
 
+
+        serviceTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, ServiceActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
         mvpTextView.setOnClickListener(new View.OnClickListener() {
             @Override

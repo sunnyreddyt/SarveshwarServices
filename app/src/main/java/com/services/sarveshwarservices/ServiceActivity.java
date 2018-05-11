@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,6 +14,7 @@ import com.services.sarveshwarservices.service.BackgroundService;
 public class ServiceActivity extends AppCompatActivity {
 
     TextView startServiceTextView, stopServiceTextView;
+    ImageView backImageView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -21,6 +23,16 @@ public class ServiceActivity extends AppCompatActivity {
 
         startServiceTextView = (TextView) findViewById(R.id.startServiceTextView);
         stopServiceTextView = (TextView) findViewById(R.id.stopServiceTextView);
+        backImageView = (ImageView) findViewById(R.id.backImageView);
+
+
+        backImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
 
         startServiceTextView.setOnClickListener(new View.OnClickListener() {
             @Override

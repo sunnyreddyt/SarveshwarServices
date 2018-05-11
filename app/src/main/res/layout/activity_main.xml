@@ -141,6 +141,23 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/_12sdp" />
 
+            <TextView
+                android:id="@+id/serviceTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="0.4"
+                android:background="@drawable/rounded_border"
+                android:elevation="@dimen/_6sdp"
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_4sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:text="Service"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+
         </LinearLayout>
 
     </LinearLayout>

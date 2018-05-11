@@ -40,4 +40,13 @@
 
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/backImageView"
+        android:layout_width="@dimen/_33sdp"
+        android:layout_height="@dimen/_33sdp"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/arrow_left" />
+
 </RelativeLayout>
