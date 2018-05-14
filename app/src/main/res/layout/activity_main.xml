@@ -101,10 +101,36 @@
 
 
             <TextView
+                android:id="@+id/mvpTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:background="@drawable/rounded_border"
+                android:elevation="@dimen/_6sdp"
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_4sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:text="MVP"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
                 android:id="@+id/googleMapsTextView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_weight="0.4"
                 android:background="@drawable/rounded_border"
                 android:elevation="@dimen/_6sdp"
@@ -116,33 +142,8 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/_12sdp" />
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:weightSum="1">
-
             <TextView
-                android:id="@+id/mvpTextView"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.4"
-                android:background="@drawable/rounded_border"
-                android:elevation="@dimen/_6sdp"
-                android:fontFamily="@font/quicksand_medium"
-                android:gravity="center"
-                android:paddingBottom="@dimen/_4sdp"
-                android:paddingTop="@dimen/_4sdp"
-                android:text="MVP"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_12sdp" />
-
-            <TextView
-                android:id="@+id/serviceTextView"
+                android:id="@+id/routeTextView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10sdp"
@@ -153,7 +154,7 @@
                 android:gravity="center"
                 android:paddingBottom="@dimen/_4sdp"
                 android:paddingTop="@dimen/_4sdp"
-                android:text="Service"
+                android:text="Route for Locations"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_12sdp" />
 
@@ -168,6 +169,20 @@
             android:orientation="horizontal"
             android:weightSum="1">
 
+            <TextView
+                android:id="@+id/serviceTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:background="@drawable/rounded_border"
+                android:elevation="@dimen/_6sdp"
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_4sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:text="Service"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
 
 
             <TextView

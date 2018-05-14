@@ -67,9 +67,9 @@ public class SplashActivity extends AppCompatActivity {
                     case Activity.RESULT_OK:
                         Log.e(TAG, "User agreed to make required location settings changes.");
 
-                            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-                            startActivity(intent);
-                            finish();
+                        Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        finish();
 
                         break;
                     case Activity.RESULT_CANCELED:
@@ -102,9 +102,9 @@ public class SplashActivity extends AppCompatActivity {
                 switch (status.getStatusCode()) {
                     case LocationSettingsStatusCodes.SUCCESS:
                         Log.e(TAG, "All location settings are satisfied.");
-                            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-                            startActivity(intent);
-                            finish();
+                        Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        finish();
 
                         break;
                     case LocationSettingsStatusCodes.RESOLUTION_REQUIRED:

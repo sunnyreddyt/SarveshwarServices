@@ -16,7 +16,7 @@ import org.w3c.dom.Text;
  */
 public class MainActivity extends AppCompatActivity {
 
-    TextView asyncTaskTextView, retrofitTextView, volleyTextView, googleMapsTextView, mvpTextView, serviceTextView, intentServiceTextView;
+    TextView asyncTaskTextView, routeTextView, retrofitTextView, volleyTextView, googleMapsTextView, mvpTextView, serviceTextView, intentServiceTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,18 @@ public class MainActivity extends AppCompatActivity {
         mvpTextView = (TextView) findViewById(R.id.mvpTextView);
         serviceTextView = (TextView) findViewById(R.id.serviceTextView);
         intentServiceTextView = (TextView) findViewById(R.id.intentServiceTextView);
+        routeTextView = (TextView) findViewById(R.id.routeTextView);
+
+
+        routeTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, RouteActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
 
         intentServiceTextView.setOnClickListener(new View.OnClickListener() {

@@ -67,6 +67,10 @@
             android:name=".IntentServiceActivity"
             android:parentActivityName=".MainActivity"></activity>
 
+        <activity
+            android:name=".RouteActivity"
+            android:parentActivityName=".MainActivity"></activity>
+
         <service android:name=".service.BackgroundService"></service>
 
         <service android:name=".service.ImageDownloadIntentService"></service>
